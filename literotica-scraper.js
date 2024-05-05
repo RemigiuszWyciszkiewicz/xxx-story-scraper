@@ -195,12 +195,12 @@ const getStory = async ({ id, link, date }) => {
 
 async function start() {
   // await getLinks();
-  let offset = 38100;
+  let offset = 38200;
 
   let storyCount = 638033;
-  let currentStoryIndex = 38100;
+  let currentStoryIndex = 38200;
 
-  for (let index = 381; index < storyCount / 100; index++) {
+  for (let index = 382; index < storyCount / 100; index++) {
     const links = await getLink(offset);
 
     for (let index = 0; index < links.length; index++) {
@@ -215,7 +215,13 @@ async function start() {
         flags: "a",
       });
       if (storyId) {
-        CreateFiles.write("Saved story: " + storyId + "\r\n");
+        CreateFiles.write(
+          "Saved story: " +
+            storyId +
+            "; currentStoryIndex: " +
+            currentStoryIndex +
+            "\r\n"
+        );
       } else {
         CreateFiles.write("Error: " + link.link + "\r\n");
       }
@@ -233,6 +239,6 @@ async function sleep(millis) {
 
 // Story bdsm library count - 10849
 // literotica Link count - 638033
-// last session - 38100
+// last session - 38200
 
 // 25400 - 23:24

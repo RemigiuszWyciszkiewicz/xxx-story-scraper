@@ -3,7 +3,8 @@ const { Pool } = pkg;
 import { v4 as uuidv4 } from "uuid";
 
 const pool = new Pool({
-  host: "54.37.136.48",
+  //host: "54.37.136.48",
+  host: "localhost",
   port: 5432,
   database: "postgres",
   user: "postgres",
