@@ -1,12 +1,11 @@
-import { Console } from "console";
 import pkg from "pg";
 const { Pool } = pkg;
 import { v4 as uuidv4 } from "uuid";
 
 const pool = new Pool({
-  host: "localhost",
+  host: "54.37.136.48",
   port: 5432,
-  database: "MetaFantasy",
+  database: "postgres",
   user: "postgres",
   password: "remik",
 });

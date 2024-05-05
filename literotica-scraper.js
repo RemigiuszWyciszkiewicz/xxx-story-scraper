@@ -205,7 +205,7 @@ async function start() {
 
     for (let index = 0; index < links.length; index++) {
       const link = links[index];
-      //    const storyId = await getStory(link);
+      const storyId = await getStory(link);
 
       currentStoryIndex++;
 
@@ -233,6 +233,6 @@ async function sleep(millis) {
 
 // Story bdsm library count - 10849
 // literotica Link count - 638033
-// last session - 38000
+// last session - 38100
 
 // 25400 - 23:24
