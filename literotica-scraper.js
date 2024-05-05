@@ -195,12 +195,12 @@ const getStory = async ({ id, link, date }) => {
 
 async function start() {
   // await getLinks();
-  let offset = 38800;
+  let offset = 75100;
 
   let storyCount = 638033;
-  let currentStoryIndex = 38800;
+  let currentStoryIndex = 75100;
 
-  for (let index = 388; index < storyCount / 100; index++) {
+  for (let index = 751; index < storyCount / 100; index++) {
     const links = await getLink(offset);
 
     for (let index = 0; index < links.length; index++) {
